@@ -20,7 +20,17 @@ bin-release/
 
 #匹配
 *.log
+*.gz
+mvnw
+mvnw.cmd
+*.ini
+.mvn/
 
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
 
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
