@@ -83,6 +83,11 @@ public class UseOptionalMethod {
         employee.setName("xxmy");
         Optional<String> nameOptional = Optional.ofNullable(employee).map(entity -> entity.getName());
         System.out.println("name = " + nameOptional.get());
+
+
+        Employee employee1 = new Employee();
+        Optional<String> nameOptional1 = Optional.ofNullable(employee1).map(entity -> entity.getName());
+        System.out.println("name = " + nameOptional1.get());
     }
 
     /**
