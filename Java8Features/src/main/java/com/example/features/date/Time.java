@@ -123,6 +123,12 @@ public class Time {
         //字符串转日期
         LocalDateTime dateTime2 = LocalDateTime.parse(str, format2);
         System.out.println("字符串转日期:" + dateTime2);
+
+        //日期格式更换
+        String endDate = "2021-05-19";
+        LocalDate dateTime = LocalDate.parse(endDate, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        String s = dateTime.format(DateTimeFormatter.ofPattern("yyyy年MM月dd日"));
+        System.out.println("日期格式更换：" + s);
     }
 
 }
