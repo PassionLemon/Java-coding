@@ -129,6 +129,17 @@ public class Time {
         LocalDate dateTime = LocalDate.parse(endDate, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
         String s = dateTime.format(DateTimeFormatter.ofPattern("yyyy年MM月dd日"));
         System.out.println("日期格式更换：" + s);
+
+
+        String endDate2 = "2021-05-20";
+        LocalDate dateTime3 = LocalDate.parse(endDate2, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        System.out.println(dateTime3.format(DateTimeFormatter.ofPattern("yyyy年MM月dd日")));
+
+        LocalDateTime localDateTime2 = LocalDateTime.now();
+        System.out.println(localDateTime2.format(DateTimeFormatter.ofPattern("MM月dd日 HH时mm分")));
+
+        StringBuilder sb = new StringBuilder();
+        System.out.println(sb.toString().equals(""));
     }
 
 }
