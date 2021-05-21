@@ -15,7 +15,7 @@ import java.util.function.Supplier;
  */
 public class CoreInterfaceTest {
     /**
-     *Consumer消费型接口,对类型为T的对象应用操作：void accept(T t)
+     *Consumer 消费型接口,对类型为T的对象应用操作：void accept(T t)
      */
     @Test
     public void test1(){
@@ -24,7 +24,7 @@ public class CoreInterfaceTest {
     }
 
     /**
-     * Supplier提供型接口,返回类型为T的对象：T get()
+     * Supplier 提供型接口,返回类型为T的对象：T get()
      */
     @Test
     public void test2(){
