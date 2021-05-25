@@ -1,4 +1,4 @@
-package com.example.socket;
+package socket;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
