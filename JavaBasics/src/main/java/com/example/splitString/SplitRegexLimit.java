@@ -1,4 +1,4 @@
-package splitString;
+package com.example.splitString;
 
 import java.util.Arrays;
 import java.util.regex.Pattern;

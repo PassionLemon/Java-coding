@@ -1,4 +1,4 @@
-package splitString;
+package com.example.splitString;
 
 
 class Person {
