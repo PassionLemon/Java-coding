@@ -1,4 +1,4 @@
-package socket;
+package com.example.webSocket;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
