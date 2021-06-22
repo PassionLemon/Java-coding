@@ -16,7 +16,7 @@ public class StreamTest {
     List<Person> personList = Arrays.asList(
         new Person("Tom", 8900, 23, "male", "New York"),
         new Person("Jack", 7000, 25, "male", "Washington"),
-        new Person("Lily", 7800, 27, "female", "Washington"),
+        new Person("Lily", 7800, 28, "female", "Washington"),
         new Person("Anni", 8200, 24, "female", "New York"),
         new Person("Owen", 9500, 25, "male", "New York"),
         new Person("Alisa", 7800, 26, "female", "New York")
