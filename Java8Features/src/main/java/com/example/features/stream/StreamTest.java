@@ -16,10 +16,10 @@ public class StreamTest {
     List<Person> personList = Arrays.asList(
         new Person("Tom", 8900, 23, "male", "New York"),
         new Person("Jack", 7000, 25, "male", "Washington"),
-        new Person("Lily", 7800, 21, "female", "Washington"),
+        new Person("Lily", 7800, 27, "female", "Washington"),
         new Person("Anni", 8200, 24, "female", "New York"),
         new Person("Owen", 9500, 25, "male", "New York"),
-        new Person("Alisa", 7900, 26, "female", "New York")
+        new Person("Alisa", 7800, 26, "female", "New York")
     );
 
     /**
@@ -204,7 +204,7 @@ public class StreamTest {
                 .collect(Collectors.toList());
         System.out.println("reversed = " + reversed);
         // 先按工资再按年龄自然排序（从小到大）
-        List<String> salaryAndAgeReversed = personList.stream().sorted(Comparator.comparing(Person::getSalary).reversed()).map(Person::getName)
+        List<String> salaryAndAgeReversed = personList.stream().sorted(Comparator.comparing(Person::getSalary).reversed().thenComparing(Person::getAge)).map(Person::getName)
                 .collect(Collectors.toList());
         System.out.println("salaryAndAgeReversed = " + salaryAndAgeReversed);
         // 先按工资再按年龄自定义排序（从大到小）
